@@ -271,6 +271,7 @@ dtb-$(CONFIG_AM33XX) += \
 	am335x-baltos.dtb \
 	am335x-bone.dtb \
 	am335x-boneblack.dtb \
+	am335x-boneblack-can-uarts.dtb \
 	am335x-brppt1-mmc.dtb \
 	am335x-brppt1-nand.dtb \
 	am335x-brppt1-spi.dtb \
