@@ -56,13 +56,14 @@
 		>;
 	};
 
-	/* Optional sleep pin settings. Must manually enter values in the below skeleton. */
+	/* Optional sleep pin settings. Must manually enter values in the below skeleton.
 	nmea2000_pins_sleep: nmea2000_pins_sleep {
 		pinctrl-single,pins = <
 			AM33XX_IOPAD(0x984,  ) /* (D15) uart1_txd.dcan1_rx */
 			AM33XX_IOPAD(0x980,  ) /* (D16) uart1_rxd.dcan1_tx */
 		>;
 	};
+	*/
 
 	mydebugss2_pins_default: mydebugss2_pins_default {
 		pinctrl-single,pins = <
@@ -79,7 +80,7 @@
 		>;
 	};
 
-	/* Optional sleep pin settings. Must manually enter values in the below skeleton. */
+	/* Optional sleep pin settings. Must manually enter values in the below skeleton.
 	mydebugss2_pins_sleep: mydebugss2_pins_sleep {
 		pinctrl-single,pins = <
 			AM33XX_IOPAD(0x9d0,  ) /* (C11) TMS.TMS */
@@ -94,6 +95,7 @@
 			AM33XX_IOPAD(0x9ac,  ) /* (A14) mcasp0_ahclkx.EMU4 */
 		>;
 	};
+	*/
 
 	myglue1_pins_default: myglue1_pins_default {
 		pinctrl-single,pins = <
@@ -102,13 +104,14 @@
 		>;
 	};
 
-	/* Optional sleep pin settings. Must manually enter values in the below skeleton. */
+	/* Optional sleep pin settings. Must manually enter values in the below skeleton.
 	myglue1_pins_sleep: myglue1_pins_sleep {
 		pinctrl-single,pins = <
 			AM33XX_IOPAD(0x9b8,  ) /* (A10) nRESETIN_OUT.nRESETIN_OUT */
 			AM33XX_IOPAD(0x9c0,  ) /* (B18) nNMI.nNMI */
 		>;
 	};
+	*/
 
 	mygpio1_pins_default: mygpio1_pins_default {
 		pinctrl-single,pins = <
@@ -119,7 +122,7 @@
 		>;
 	};
 
-	/* Optional sleep pin settings. Must manually enter values in the below skeleton. */
+	/* Optional sleep pin settings. Must manually enter values in the below skeleton.
 	mygpio1_pins_sleep: mygpio1_pins_sleep {
 		pinctrl-single,pins = <
 			AM33XX_IOPAD(0x854,  ) /* (V15) gpmc_a5.gpio1[21] */
@@ -128,6 +131,7 @@
 			AM33XX_IOPAD(0x868,  ) /* (T16) gpmc_a10.gpio1[26] */
 		>;
 	};
+	*/
 
 	i2c_auth_pins_default: i2c_auth_pins_default {
 		pinctrl-single,pins = <
@@ -136,13 +140,14 @@
 		>;
 	};
 
-	/* Optional sleep pin settings. Must manually enter values in the below skeleton. */
+	/* Optional sleep pin settings. Must manually enter values in the below skeleton.
 	i2c_auth_pins_sleep: i2c_auth_pins_sleep {
 		pinctrl-single,pins = <
 			AM33XX_IOPAD(0x98c,  ) /* (C16) I2C0_SCL.I2C0_SCL */
 			AM33XX_IOPAD(0x988,  ) /* (C17) I2C0_SDA.I2C0_SDA */
 		>;
 	};
+	*/
 
 	mdio1_pins_default: mdio1_pins_default {
 		pinctrl-single,pins = <
@@ -151,13 +156,14 @@
 		>;
 	};
 
-	/* Optional sleep pin settings. Must manually enter values in the below skeleton. */
+	/* Optional sleep pin settings. Must manually enter values in the below skeleton.
 	mdio1_pins_sleep: mdio1_pins_sleep {
 		pinctrl-single,pins = <
 			AM33XX_IOPAD(0x94c,  ) /* (M18) mdio_clk.mdio_clk */
 			AM33XX_IOPAD(0x948,  ) /* (M17) mdio_data.mdio_data */
 		>;
 	};
+	*/
 
 	mii1_pins_default: mii1_pins_default {
 		pinctrl-single,pins = <
@@ -179,7 +185,7 @@
 		>;
 	};
 
-	/* Optional sleep pin settings. Must manually enter values in the below skeleton. */
+	/* Optional sleep pin settings. Must manually enter values in the below skeleton.
 	mii1_pins_sleep: mii1_pins_sleep {
 		pinctrl-single,pins = <
 			AM33XX_IOPAD(0x908,  ) /* (H16) gmii1_col.gmii1_col */
@@ -199,6 +205,7 @@
 			AM33XX_IOPAD(0x934,  ) /* (L17) gmii1_rxd3.gmii1_rxd3 */
 		>;
 	};
+	*/
 
 	mmc0_pins_default: mmc0_pins_default {
 		pinctrl-single,pins = <
@@ -212,7 +219,7 @@
 		>;
 	};
 
-	/* Optional sleep pin settings. Must manually enter values in the below skeleton. */
+	/* Optional sleep pin settings. Must manually enter values in the below skeleton.
 	mmc0_pins_sleep: mmc0_pins_sleep {
 		pinctrl-single,pins = <
 			AM33XX_IOPAD(0x900,  ) /* (G17) mmc0_clk.mmc0_clk */
@@ -224,6 +231,7 @@
 			AM33XX_IOPAD(0x990,  ) /* (A13) mcasp0_aclkx.mmc0_sdcd */
 		>;
 	};
+	*/
 
 	myrtc1_pins_default: myrtc1_pins_default {
 		pinctrl-single,pins = <
@@ -234,7 +242,7 @@
 		>;
 	};
 
-	/* Optional sleep pin settings. Must manually enter values in the below skeleton. */
+	/* Optional sleep pin settings. Must manually enter values in the below skeleton.
 	myrtc1_pins_sleep: myrtc1_pins_sleep {
 		pinctrl-single,pins = <
 			AM33XX_IOPAD(0x9f8,  ) /* (B5) RTC_PORz.RTC_PORz */
@@ -243,6 +251,7 @@
 			AM33XX_IOPAD(0xa04,  ) /* (B4) ENZ_KALDO_1P8V.ENZ_KALDO_1P8V */
 		>;
 	};
+	*/
 
 	uart0_console_pins_default: uart0_console_pins_default {
 		pinctrl-single,pins = <
@@ -251,13 +260,14 @@
 		>;
 	};
 
-	/* Optional sleep pin settings. Must manually enter values in the below skeleton. */
+	/* Optional sleep pin settings. Must manually enter values in the below skeleton.
 	uart0_console_pins_sleep: uart0_console_pins_sleep {
 		pinctrl-single,pins = <
 			AM33XX_IOPAD(0x970,  ) /* (E15) uart0_rxd.uart0_rxd */
 			AM33XX_IOPAD(0x974,  ) /* (E16) uart0_txd.uart0_txd */
 		>;
 	};
+	*/
 
 	uart5_nmea0183_rx_tx_pins_default: uart5_nmea0183_rx_tx_pins_default {
 		pinctrl-single,pins = <
@@ -266,13 +276,14 @@
 		>;
 	};
 
-	/* Optional sleep pin settings. Must manually enter values in the below skeleton. */
+	/* Optional sleep pin settings. Must manually enter values in the below skeleton.
 	uart5_nmea0183_rx_tx_pins_sleep: uart5_nmea0183_rx_tx_pins_sleep {
 		pinctrl-single,pins = <
 			AM33XX_IOPAD(0x8c4,  ) /* (U2) lcd_data9.uart5_rxd */
 			AM33XX_IOPAD(0x8c0,  ) /* (U1) lcd_data8.uart5_txd */
 		>;
 	};
+	*/
 
 	uart4_nmea0183_rx_tx_pins_default: uart4_nmea0183_rx_tx_pins_default {
 		pinctrl-single,pins = <
@@ -281,13 +292,14 @@
 		>;
 	};
 
-	/* Optional sleep pin settings. Must manually enter values in the below skeleton. */
+	/* Optional sleep pin settings. Must manually enter values in the below skeleton.
 	uart4_nmea0183_rx_tx_pins_sleep: uart4_nmea0183_rx_tx_pins_sleep {
 		pinctrl-single,pins = <
 			AM33XX_IOPAD(0x870,  ) /* (T17) gpmc_wait0.uart4_rxd */
 			AM33XX_IOPAD(0x874,  ) /* (U17) gpmc_wpn.uart4_txd */
 		>;
 	};
+	*/
 
 	uart3_nmea0183_rx_pins_default: uart3_nmea0183_rx_pins_default {
 		pinctrl-single,pins = <
@@ -295,12 +307,13 @@
 		>;
 	};
 
-	/* Optional sleep pin settings. Must manually enter values in the below skeleton. */
+	/* Optional sleep pin settings. Must manually enter values in the below skeleton.
 	uart3_nmea0183_rx_pins_sleep: uart3_nmea0183_rx_pins_sleep {
 		pinctrl-single,pins = <
 			AM33XX_IOPAD(0x960,  ) /* (C15) spi0_cs1.uart3_rxd */
 		>;
 	};
+	*/
 
 	uart2_nmea0183_rx_pins_default: uart2_nmea0183_rx_pins_default {
 		pinctrl-single,pins = <
@@ -308,12 +321,13 @@
 		>;
 	};
 
-	/* Optional sleep pin settings. Must manually enter values in the below skeleton. */
+	/* Optional sleep pin settings. Must manually enter values in the below skeleton.
 	uart2_nmea0183_rx_pins_sleep: uart2_nmea0183_rx_pins_sleep {
 		pinctrl-single,pins = <
 			AM33XX_IOPAD(0x950,  ) /* (A17) spi0_sclk.uart2_rxd */
 		>;
 	};
+	*/
 
 	myusb1_pins_default: myusb1_pins_default {
 		pinctrl-single,pins = <
@@ -321,28 +335,17 @@
 		>;
 	};
 
-	/* Optional sleep pin settings. Must manually enter values in the below skeleton. */
+	/* Optional sleep pin settings. Must manually enter values in the below skeleton.
 	myusb1_pins_sleep: myusb1_pins_sleep {
 		pinctrl-single,pins = <
 			AM33XX_IOPAD(0xa34,  ) /* (F15) USB1_DRVVBUS.USB1_DRVVBUS */
 		>;
 	};
-
+	*/
 };
 
 &lcdc {
 	status = "okay";
-};
-
-/ {
-	hdmi {
-		compatible = "ti,tilcdc,slave";
-		i2c = <&i2c0>;
-		pinctrl-names = "default", "off";
-		pinctrl-0 = <&nxp_hdmi_bonelt_pins>;
-		pinctrl-1 = <&nxp_hdmi_bonelt_off_pins>;
-		status = "okay";
-	};
 };
 
 &rtc {
