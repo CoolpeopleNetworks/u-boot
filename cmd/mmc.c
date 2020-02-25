@@ -10,6 +10,7 @@
 #include <mmc.h>
 #include <sparse_format.h>
 #include <image-sparse.h>
+#include <errno.h>
 
 static int curr_device = -1;
 
@@ -106,8 +107,17 @@ static struct mmc *init_mmc_device(int dev, bool force_init)
 
 	if (force_init)
 		mmc->has_init = 0;
-	if (mmc_init(mmc))
+
+	int err = mmc_init(mmc);
+	if (err) {
+		if (err == -ENOMEDIUM) {
+			printf("Initialization of MMC device failed: NO CARD PRESENT.\n");
+		}
+		else {
+			printf("Initialization of MMC device failed: %d\n", err);
+		}
 		return NULL;
+	}
 
 #ifdef CONFIG_BLOCK_CACHE
 	struct blk_desc *bd = mmc_get_blk_desc(mmc);
